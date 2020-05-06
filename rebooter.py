@@ -1,10 +1,9 @@
+import os
 #rebooter
-rnp = input("Write R to reboot, P to power off, N to exit.")
-if rnp == P or rnp == p:
-    import os
-    os.system('tsu && poweroff')
-elif rnp == R or rnp == r:
-    import os
-    os.system("tsu && reboot")
+choice = input("Write R to reboot, P to power off, N to exit.")
+if choice == P or choice == p:
+    os.system("su && poweroff")
+elif choice == R or choice == r:
+    os.system("su && reboot")
 else:
     exit()
